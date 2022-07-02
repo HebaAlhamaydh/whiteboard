@@ -1,4 +1,5 @@
 'use strict';
+require("dotenv").config();
 const express=require('express')
 const app=express();
 let httpServer = require("http").createServer(app);
@@ -33,7 +34,7 @@ socket.on("draw",(data)=>{
 // });
 
 app.use(express.static('public'));
-const PORT=process.env.PORT||5000;
+let PORT=process.env.PORT||3030;
 httpServer.listen(PORT,()=>{
     console.log(`server started on PORT ${PORT}`);
 });

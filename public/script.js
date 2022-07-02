@@ -1,6 +1,6 @@
 "use strict";
 let canvas=document.getElementById('canvas')
-var io=io.connect('http://localhost:5000')
+var io=io.connect('http://localhost:9000')
 canvas.width = 0.98 * window.innerWidth;
 canvas.height = window.innerHeight;
 
